@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p {color: rgb(17, 255, 0); }
+        div > div{
+            
+            background-color: indigo;
+            color: azure;
+        }
+        .unica {
+            background-color: crimson;
+           
+        }
+        div + section {
+            background-color: aqua;
+            color: rgb(255, 0, 0);
+        }
+        div ~ p2 {
+            color: rgb(243, 255, 10);
+            background-color:rgb(0, 0, 0) ;
+        }
+    </style>
+</head> 
+<body>
+    <div>
+        <div>
+            <p> "style_hijo_directo background y color letra style_descendiente que
+                 tiene prioridad sobre color blanco style_directo " </p>
+            <div class="unica"> style_selector de clase background y style_selector directo letra por que no hay "p" y no hay color en style de la clase "unica"</div>
+        </div>
+        <p>"style_descendiente letra"</p>
+    </div>
+    <section>
+        style_elemento adyacente
+    </section>
+    <p2>style_elemento general de hermanos tiene prioridad sonbre descendiente</p2>
+</body>
+</html>
