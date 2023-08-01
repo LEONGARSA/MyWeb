@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: salmon;
+    }
+
+    p::selection{
+        
+        color: teal;
+    }
+
+    p::before{
+
+        content: "😁";
+    }
+
+    p::after{
+
+        content: "❤️" ;
+    }
+
+    p:hover {
+        
+        color: rgb(164, 93, 231);
+    }
+    div p:nth-child(2) {
+        color: aqua;
+    }
+</style>
+<body>
+    <p> hola </p>
+    <div>
+        <p>platzi</p>
+        <p>master</p>
+        <p>lo mejor</p>
+    </div>
+</body>
+</html>
