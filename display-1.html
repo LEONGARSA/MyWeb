@@ -14,9 +14,26 @@
             height: 200px;
             margin: 20px;
         }
+        a {
+            background-color: skyblue;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            /* como es inline no aplica Width ni height pero si margin */
+        }
+
+        button {
+            background-color: slateblue;
+            width: 200px;
+            height: 200px;
+             /* al ser inline block no va a crecer mas alla de su contenedor pero cuenta con
+             caracteriscas de bloque por ende se puede aplicar width y height */
+        }
     </style>  
 </head>
 <body>
    <div>bloque</div> 
+   <a href="/">inline</a>
+   <button>inline block</button>
 </body>
 </html>
